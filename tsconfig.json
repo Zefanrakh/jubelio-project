@@ -18,6 +18,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["node", "jest"],
     "typeRoots": ["./node_modules/@types", "./types"]
   },
   "include": ["**/*.ts"],
