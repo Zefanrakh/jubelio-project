@@ -1,0 +1,40 @@
+{
+  "name": "jubelio-project",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node app.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest --runInBand --verbose",
+    "migrate": "ts-node migrate.ts migrate",
+    "rollback": "ts-node migrate.ts rollback"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^6.0.0",
+    "@fastify/cors": "^10.0.2",
+    "@fastify/sensible": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.0.0",
+    "fastify-cli": "^7.3.0",
+    "fastify-plugin": "^5.0.0",
+    "pg-mem": "^3.0.4",
+    "pg-promise": "^11.10.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.12.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,7 @@
+-- Up
+ALTER TABLE products ADD COLUMN deleted_at TIMESTAMP DEFAULT NULL;
+ALTER TABLE adjustments ADD COLUMN deleted_at TIMESTAMP DEFAULT NULL;
+
+-- Down
+ALTER TABLE products DROP COLUMN IF EXISTS deleted_at;
+ALTER TABLE adjustments DROP COLUMN IF EXISTS deleted_at;

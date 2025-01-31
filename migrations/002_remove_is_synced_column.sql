@@ -1,0 +1,7 @@
+-- Up
+ALTER TABLE products
+DROP COLUMN IF EXISTS is_synced;
+
+-- Down
+ALTER TABLE products
+ADD COLUMN is_synced BOOLEAN DEFAULT TRUE;

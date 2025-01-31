@@ -1,0 +1,10 @@
+-- Up
+ALTER TABLE products
+ALTER COLUMN image
+DROP NOT NULL;
+
+-- Down
+ALTER TABLE products
+ALTER COLUMN image
+SET
+    NOT NULL;
