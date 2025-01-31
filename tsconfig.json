@@ -18,7 +18,8 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "noFallthroughCasesInSwitch": true,
-    "typeRoots": ["./node_modules/@types", "./types"]
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": ["node"]
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist", "test/**/*.ts", "**/*.test.ts", "jest.config.ts"]
