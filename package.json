@@ -13,8 +13,7 @@
     "lint": "eslint . --ext .ts",
     "test": "jest --runInBand --verbose",
     "migrate": "ts-node migrate.ts migrate",
-    "rollback": "ts-node migrate.ts rollback",
-    "heroku-postbuild": "npm install --only=dev && npm run build"
+    "rollback": "ts-node migrate.ts rollback"
   },
   "keywords": [],
   "author": "",
