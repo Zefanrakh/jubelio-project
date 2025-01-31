@@ -38,7 +38,7 @@ fastify.register(AutoLoad, {
 
 const start = async () => {
   try {
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 5000;
     await fastify.listen({ port: Number(port), host: "0.0.0.0" });
     console.log(`Server running on port ${port}`);
   } catch (err) {
