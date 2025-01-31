@@ -38,8 +38,9 @@ fastify.register(AutoLoad, {
 
 const start = async () => {
   try {
-    await fastify.listen({ port: 5000 });
-    console.log("Server running on port 5000");
+    const port = process.env.PORT || 3000;
+    await fastify.listen({ port: Number(port) });
+    console.log(`Server running on port ${port}`);
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
